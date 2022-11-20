@@ -1,10 +1,14 @@
 import Titulo from "../../components/Titulo";
 
-export default function () {
+export default () => {
+    const attributes = {
+        principal: "Página de cadastro", secondary: "Incluir, alterar e excluir coisas", wrapper: "i"
+    }
     return (
-        <div>
-            <h1>Usando Título</h1>
-            <Titulo/>
-        </div>
+        <>
+            <div>
+                <Titulo {...attributes}/>
+            </div>
+        </>
     )
 }

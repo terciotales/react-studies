@@ -1,10 +1,20 @@
 import React from "react";
 
-export default function () {
+const Titulo = (attributes) => {
+    const {
+        principal = 'Título',
+        secondary = 'Subtítulo',
+        wrapper = 'h1'
+    } = attributes;
+
+    const Wrapper = wrapper;
+
     return (
         <>
-        <h1>Título</h1>
-        <h2>Subtítulo</h2>
+            <Wrapper>{principal}</Wrapper>
+            <h2>{secondary}</h2>
         </>
     )
+
 }
+export default Titulo;
